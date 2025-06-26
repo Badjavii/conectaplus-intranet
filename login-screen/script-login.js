@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Validar credenciales
         if (cedula === defaultCedula && password === defaultPassword) {
             // Redirigir a la página principal
-            window.location.href = '..\main-screen\index-main.html';
+            window.location.href = '../main-screen/index-main.html';
         } else {
             // Mostrar mensaje de error
             errorMessage.style.display = 'block';
