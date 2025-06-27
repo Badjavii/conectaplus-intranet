@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atención al Cliente | ConectaPlus</title>
-    <link rel="stylesheet" href="../style-main.css">
+    <link rel="stylesheet" href="../resources/style-base.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
@@ -15,19 +15,16 @@
         <header class="app-header">
             <div class="header-left">
                 <div class="company-logo">
-                    <img src="../assets/logo-conectaplus.png" alt="ConectaPlus">
+                    <img src="../resources/logo.png" alt="ConectaPlus">
                 </div>
                 <h1>Intranet Corporativa</h1>
             </div>
             <div class="header-right">
                 <div class="user-profile">
-                    <span class="welcome-msg">Bienvenido, <strong>Juan Pérez</strong></span>
+                    <span class="welcome-msg">Bienvenido, Usuario</span>
                     <div class="user-avatar">
                         <i class="fas fa-user"></i>
                     </div>
-                    <a href="../login-screen/index-login.html" class="logout-btn">
-                        <i class="fas fa-sign-out-alt"></i>
-                    </a>
                 </div>
             </div>
         </header>
@@ -39,24 +36,59 @@
                 <nav class="department-nav">
                     <ul>
                         <li>
-                            <a href="../main-screen/index-main.html">
+                            <a href="#" data-area="inicio">
                                 <i class="fas fa-home"></i>
                                 <span>Inicio</span>
                             </a>
                         </li>
                         <li class="active">
-                            <a href="#">
+                            <a href="#" data-area="atencion-cliente">
                                 <i class="fas fa-headset"></i>
                                 <span>Atención al Cliente</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#" data-area="facturacion">
                                 <i class="fas fa-file-invoice-dollar"></i>
                                 <span>Facturación</span>
                             </a>
                         </li>
-                        <!-- Resto de departamentos... -->
+                        <li>
+                            <a href="#" data-area="finanzas">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Finanzas</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-area="recursos-humanos">
+                                <i class="fas fa-users"></i>
+                                <span>Recursos Humanos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-area="capacitacion">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Capacitación</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-area="inteligencia-negocios">
+                                <i class="fas fa-bullseye"></i>
+                                <span>Inteligencia de Negocios</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-area="mercadeo-ventas">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>Mercadeo y Ventas</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-area="salida">
+                                <i class="fas fa-right-from-bracket"></i>
+                                <span>Salir</span>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </aside>
@@ -127,6 +159,17 @@
             </main>
         </div>
     </div>
+
+    <footer>
+        <p>Intranet Corporativa ConectaPlus &copy; 2023 - Todos los derechos reservados</p>
+        <p><a href="#">Política de Privacidad</a> | <a href="#">Términos de Servicio</a></p>
+        <p>
+            Orgullosamente desarrollado por Itzel La Rosa, Samuel Parra G., Jesus Figureoa y
+            Javier Otero
+        </p>
+    </footer>
+
+    <script src="../resources/script-base.js"></script>
 </body>
 
 </html>

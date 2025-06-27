@@ -6,8 +6,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Mapeo de áreas con sus URLs (ajusta según tu estructura de archivos)
     const areas = {
-        'inicio': '../main-screen/index-main.html',
-        'atencion-cliente': '../departments/customer-service/index-customer-service.html',
+        'inicio': '../D02-main-screen/index-main.html',
+        'atencion-cliente': '../D03-customer-service/index.html',
         'facturacion': '../departments/billing/index-billing.html',
         'finanzas': '../departments/finance/index-finance.html',
         'recursos-humanos': '../departments/hr/index-hr.html',
