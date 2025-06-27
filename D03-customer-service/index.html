@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atención al Cliente | ConectaPlus</title>
+    <link rel="stylesheet" href="../style-main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Header (Mismo que index-main.html) -->
+        <header class="app-header">
+            <div class="header-left">
+                <div class="company-logo">
+                    <img src="../assets/logo-conectaplus.png" alt="ConectaPlus">
+                </div>
+                <h1>Intranet Corporativa</h1>
+            </div>
+            <div class="header-right">
+                <div class="user-profile">
+                    <span class="welcome-msg">Bienvenido, <strong>Juan Pérez</strong></span>
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <a href="../login-screen/index-login.html" class="logout-btn">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="app-content">
+            <!-- Sidebar (Misma estructura pero con Atención al Cliente activo) -->
+            <aside class="app-sidebar">
+                <nav class="department-nav">
+                    <ul>
+                        <li>
+                            <a href="../main-screen/index-main.html">
+                                <i class="fas fa-home"></i>
+                                <span>Inicio</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#">
+                                <i class="fas fa-headset"></i>
+                                <span>Atención al Cliente</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-file-invoice-dollar"></i>
+                                <span>Facturación</span>
+                            </a>
+                        </li>
+                        <!-- Resto de departamentos... -->
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- Content Area Específica para Atención al Cliente -->
+            <main class="content-area">
+                <section class="department-header">
+                    <h2><i class="fas fa-headset"></i> Atención al Cliente</h2>
+                    <p>Gestión centralizada de clientes y tickets de soporte</p>
+                </section>
+
+                <!-- Widgets específicos del área -->
+                <div class="dashboard-widgets">
+                    <!-- Widget: Tickets Abiertos -->
+                    <div class="widget">
+                        <div class="widget-header">
+                            <h3>Tickets Activos</h3>
+                            <span class="badge">24</span>
+                        </div>
+                        <div class="widget-content">
+                            <div class="ticket-item">
+                                <span class="ticket-priority high"></span>
+                                <div class="ticket-info">
+                                    <h4>#45621 - Fallo en servicio de internet</h4>
+                                    <p>Cliente: Carlos Rojas | Sector: Este</p>
+                                </div>
+                                <span class="ticket-time">2h 15m</span>
+                            </div>
+                            <!-- Más tickets... -->
+                        </div>
+                    </div>
+
+                    <!-- Widget: Herramientas Rápidas -->
+                    <div class="widget quick-tools">
+                        <div class="widget-header">
+                            <h3>Herramientas</h3>
+                        </div>
+                        <div class="widget-content">
+                            <button class="tool-btn">
+                                <i class="fas fa-plus-circle"></i>
+                                Nuevo Ticket
+                            </button>
+                            <button class="tool-btn">
+                                <i class="fas fa-search"></i>
+                                Buscar Cliente
+                            </button>
+                            <button class="tool-btn">
+                                <i class="fas fa-chart-bar"></i>
+                                Reportes
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Widget: Base de Conocimiento -->
+                    <div class="widget knowledge-base">
+                        <div class="widget-header">
+                            <h3>Base de Conocimiento</h3>
+                        </div>
+                        <div class="widget-content">
+                            <div class="kb-item">
+                                <i class="fas fa-file-alt"></i>
+                                <span>Procedimiento para fallos de conexión</span>
+                            </div>
+                            <!-- Más items... -->
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

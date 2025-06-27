@@ -1,14 +1,24 @@
-/* Variables de color */
+/* ================ VARIABLES GLOBALES ================ */
 :root {
+    /* Colores corporativos */
     --primary-color: #2c3e50;
+    /* Azul oscuro principal */
     --secondary-color: #3498db;
+    /* Azul corporativo */
     --accent-color: #e74c3c;
+    /* Rojo/accent para alertas */
     --light-gray: #ecf0f1;
+    /* Fondo gris claro */
     --dark-gray: #7f8c8d;
+    /* Texto gris */
     --white: #ffffff;
+    /* Blanco puro */
+
+    /* Sombras */
+    --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Reset y estilos base */
+/* ================ RESET Y ESTILOS BASE ================ */
 * {
     margin: 0;
     padding: 0;
@@ -21,13 +31,19 @@ body {
     color: #333;
 }
 
+/* ================ ESTRUCTURA PRINCIPAL ================ */
 .app-container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* Header */
+.app-content {
+    display: flex;
+    flex: 1;
+}
+
+/* ================ HEADER COMPARTIDO ================ */
 .app-header {
     background-color: var(--primary-color);
     color: var(--white);
@@ -35,7 +51,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: var(--shadow-sm);
 }
 
 .header-left {
@@ -46,6 +62,7 @@ body {
 
 .company-logo img {
     height: 40px;
+    width: auto;
 }
 
 .app-header h1 {
@@ -74,18 +91,29 @@ body {
     cursor: pointer;
 }
 
-/* Main Content Layout */
-.app-content {
-    display: flex;
-    flex: 1;
+.user-avatar i {
+    font-size: 1.2rem;
 }
 
-/* Sidebar */
+.logout-btn {
+    color: var(--white);
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    color: var(--accent-color);
+}
+
+/* ================ SIDEBAR COMPARTIDO ================ */
 .app-sidebar {
     width: 250px;
     background-color: var(--white);
     border-right: 1px solid #ddd;
     padding: 1.5rem 0;
+    flex-shrink: 0;
 }
 
 .department-nav ul {
@@ -118,105 +146,51 @@ body {
 .department-nav li.active a {
     background-color: var(--light-gray);
     border-left: 4px solid var(--secondary-color);
+    font-weight: 500;
 }
 
-.department-nav li.active a i {
-    color: var(--secondary-color);
-}
-
-/* Content Area */
+/* ================ ÁREA DE CONTENIDO BASE ================ */
 .content-area {
     flex: 1;
     padding: 2rem;
+    background-color: var(--white);
 }
 
-.welcome-banner {
+/* ================ COMPONENTES MÍNIMOS COMPARTIDOS ================ */
+/* Solo elementos absolutamente necesarios para todas las páginas */
+.card {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-primary {
     background-color: var(--secondary-color);
     color: var(--white);
-    padding: 2rem;
-    border-radius: 8px;
-    margin-bottom: 2rem;
 }
 
-.welcome-banner h2 {
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-}
-
-/* Quick Actions */
-.quick-actions {
-    margin-bottom: 2rem;
-}
-
-.quick-actions h3 {
-    margin-bottom: 1.5rem;
-    color: var(--primary-color);
-    font-weight: 500;
-}
-
-.action-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1.5rem;
-}
-
-.action-card {
-    background-color: var(--white);
-    border-radius: 8px;
-    padding: 1.5rem;
-    text-align: center;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease;
-    cursor: pointer;
-}
-
-.action-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.action-card i {
-    font-size: 2rem;
-    color: var(--secondary-color);
-    margin-bottom: 1rem;
-    display: block;
-}
-
-.action-card span {
-    font-size: 0.9rem;
-    color: var(--primary-color);
-}
-
-/* News Section */
-.corporate-news h3 {
-    margin-bottom: 1.5rem;
-    color: var(--primary-color);
-    font-weight: 500;
-}
-
-.news-card {
-    background-color: var(--white);
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin-bottom: 1rem;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-.news-card h4 {
-    color: var(--secondary-color);
-    margin-bottom: 0.5rem;
-}
-
-.news-date {
-    color: var(--dark-gray);
-    font-size: 0.8rem;
-    margin-bottom: 0.8rem;
-    display: block;
+.btn-primary:hover {
+    background-color: #2980b9;
 }
 
 footer {
-  text-align: center;
-  bottom: 0;
-  width: 100%;
-  background-color: #f0f0f0; /* Opcional: para visualizar el footer */
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    /* Opcional: para visualizar el footer */
 }

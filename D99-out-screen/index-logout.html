@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión finalizada | ConectaPlus</title>
+    <link rel="stylesheet" href="style-logout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="logout-container">
+        <div class="logout-box">
+            <div class="logo-container">
+                <img src="../resources/logo.png" alt="ConectaPlus" class="logo">
+            </div>
+
+            <div class="logout-message">
+                <i class="fas fa-sign-out-alt logout-icon"></i>
+                <h1>Sesión finalizada</h1>
+                <p>Has cerrado sesión correctamente en el sistema.</p>
+            </div>
+
+            <div class="return-login">
+                <p>¿Necesitas volver al sistema? <a href="../D01-login-screen/index-login.html" id="return-link">Iniciar
+                        sesión</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Redirección automática después de 5 segundos
+        setTimeout(() => {
+            window.location.href = "../D01-login-screen/index-login.html";
+        }, 5000); // 5000 ms = 5 segundos
+    </script>
+</body>
+
+</html>
