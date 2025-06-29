@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', function () {
         const password = document.getElementById('password').value;
 
         // Credenciales por defecto
-        const defaultCedula = '12345678';
-        const defaultPassword = 'contraseña';
+        const defaultCedula = '1234';
+        const defaultPassword = 'password';
 
         // Validar credenciales
         if (cedula === defaultCedula && password === defaultPassword) {

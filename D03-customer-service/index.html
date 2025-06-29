@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atención al Cliente | ConectaPlus</title>
     <link rel="stylesheet" href="../resources/style-base.css">
+    <link rel="stylesheet" href="style-customer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
@@ -94,66 +95,80 @@
             </aside>
 
             <!-- Content Area Específica para Atención al Cliente -->
+            <!-- Content Area -->
             <main class="content-area">
                 <section class="department-header">
                     <h2><i class="fas fa-headset"></i> Atención al Cliente</h2>
                     <p>Gestión centralizada de clientes y tickets de soporte</p>
                 </section>
 
-                <!-- Widgets específicos del área -->
-                <div class="dashboard-widgets">
-                    <!-- Widget: Tickets Abiertos -->
-                    <div class="widget">
-                        <div class="widget-header">
-                            <h3>Tickets Activos</h3>
-                            <span class="badge">24</span>
+                <!-- Función prioritaria destacada -->
+                <div class="priority-function">
+                    <div class="function-header">
+                        <i class="fas fa-ticket-alt"></i>
+                        <h3>Gestión de Tickets</h3>
+                    </div>
+                    <div class="function-description">
+                        <p>Sistema completo para creación, seguimiento y resolución de tickets de soporte técnico.</p>
+                    </div>
+                    <div class="function-actions">
+                        <a href="tickets/create.html" class="btn btn-primary">
+                            <i class="fas fa-plus-circle"></i> Nuevo Ticket
+                        </a>
+                        <a href="tickets/track.html" class="btn btn-secondary">
+                            <i class="fas fa-search"></i> Seguir Ticket Existente
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Otras funcionalidades -->
+                <div class="function-grid">
+                    <!-- Historial de llamadas -->
+                    <div class="function-card">
+                        <div class="card-icon">
+                            <i class="fas fa-phone"></i>
                         </div>
-                        <div class="widget-content">
-                            <div class="ticket-item">
-                                <span class="ticket-priority high"></span>
-                                <div class="ticket-info">
-                                    <h4>#45621 - Fallo en servicio de internet</h4>
-                                    <p>Cliente: Carlos Rojas | Sector: Este</p>
-                                </div>
-                                <span class="ticket-time">2h 15m</span>
-                            </div>
-                            <!-- Más tickets... -->
-                        </div>
+                        <h4>Historial de Llamadas</h4>
+                        <p>Registro completo de interacciones telefónicas con clientes</p>
+                        <a href="calls/history.html" class="btn-link">
+                            Acceder <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
 
-                    <!-- Widget: Herramientas Rápidas -->
-                    <div class="widget quick-tools">
-                        <div class="widget-header">
-                            <h3>Herramientas</h3>
+                    <!-- Base de conocimiento -->
+                    <div class="function-card">
+                        <div class="card-icon">
+                            <i class="fas fa-book"></i>
                         </div>
-                        <div class="widget-content">
-                            <button class="tool-btn">
-                                <i class="fas fa-plus-circle"></i>
-                                Nuevo Ticket
-                            </button>
-                            <button class="tool-btn">
-                                <i class="fas fa-search"></i>
-                                Buscar Cliente
-                            </button>
-                            <button class="tool-btn">
-                                <i class="fas fa-chart-bar"></i>
-                                Reportes
-                            </button>
-                        </div>
+                        <h4>Base de Conocimiento</h4>
+                        <p>Documentación y soluciones para problemas comunes</p>
+                        <a href="knowledge-base/" class="btn-link">
+                            Explorar <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
 
-                    <!-- Widget: Base de Conocimiento -->
-                    <div class="widget knowledge-base">
-                        <div class="widget-header">
-                            <h3>Base de Conocimiento</h3>
+                    <!-- Encuestas de satisfacción -->
+                    <div class="function-card">
+                        <div class="card-icon">
+                            <i class="fas fa-clipboard-check"></i>
                         </div>
-                        <div class="widget-content">
-                            <div class="kb-item">
-                                <i class="fas fa-file-alt"></i>
-                                <span>Procedimiento para fallos de conexión</span>
-                            </div>
-                            <!-- Más items... -->
+                        <h4>Encuestas de Satisfacción</h4>
+                        <p>Evaluación de calidad del servicio al cliente</p>
+                        <a href="surveys/" class="btn-link">
+                            Gestionar <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <!-- Reportes -->
+                    <div class="function-card">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-bar"></i>
                         </div>
+                        <h4>Reportes de Gestión</h4>
+                        <p>Métricas y estadísticas del área</p>
+                        <a href="reports/" class="btn-link">
+                            Ver Reportes <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </main>
