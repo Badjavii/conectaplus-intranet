@@ -6,15 +6,15 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Mapeo de áreas con sus URLs (ajusta según tu estructura de archivos)
     const areas = {
-        'inicio': '../D02-main-screen/index-main.html',
-        'atencion-cliente': '../D03-customer-service/index.html',
-        'facturacion': '../departments/billing/index-billing.html',
-        'finanzas': '../departments/finance/index-finance.html',
-        'recursos-humanos': '../departments/hr/index-hr.html',
-        'capacitacion': '../departments/training/index-training.html',
-        'inteligencia-negocios': '../departments/business-intelligence/index-bi.html',
-        'mercadeo-ventas': '../departments/marketing/index-marketing.html',
-        'salida': '../D99-out-screen/index-logout.html'
+        'inicio': '../main/index-main.html',
+        'atencion-cliente': '../customer-service/index-cs.html',
+        'facturacion': '../billing/index-billing.html',
+        'finanzas': '../finance/index-finance.html',
+        'recursos-humanos': '../hr/index-hr.html',
+        'capacitacion': '../training/index-training.html',
+        'inteligencia-negocios': '../business-intelligence/index-bi.html',
+        'mercadeo-ventas': '../marketing/index-marketing.html',
+        'salida': '../logout/index.html'
     };
 
     // Configurar eventos de navegación

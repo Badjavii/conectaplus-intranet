@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finanzas | ConectaPlus</title>
+    <link rel="stylesheet" href="../resources/style-base.css">
+    <link rel="stylesheet" href="style-finance.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-left">
+                <div class="company-logo">
+                    <img src="../resources/logo.png" alt="ConectaPlus">
+                </div>
+                <h1>Intranet Corporativa</h1>
+            </div>
+            <div class="header-right">
+                <div class="user-profile">
+                    <span class="welcome-msg">Bienvenido, Usuario</span>
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="app-content">
+            <aside class="app-sidebar">
+                <nav class="department-nav">
+                    <ul>
+                        <li><a href="../main/index-main.html"><i class="fas fa-home"></i><span>Inicio</span></a></li>
+                        <li><a href="../customer-service/index-cs.html"><i class="fas fa-headset"></i><span>Atención al
+                                    Cliente</span></a></li>
+                        <li><a href="../billing/index.html"><i
+                                    class="fas fa-file-invoice-dollar"></i><span>Facturación</span></a></li>
+                        <li class="active"><a href="index-finance.html"><i
+                                    class="fas fa-chart-line"></i><span>Finanzas</span></a></li>
+                        <li><a href="../hr/index-hr.html"><i class="fas fa-users"></i><span>Recursos Humanos</span></a>
+                        </li>
+                        <li><a href="../training/index.html"><i
+                                    class="fas fa-graduation-cap"></i><span>Capacitación</span></a></li>
+                        <li><a href="../business-intelligence/index.html"><i
+                                    class="fas fa-bullseye"></i><span>Inteligencia de Negocios</span></a></li>
+                        <li><a href="../marketing/index.html"><i class="fas fa-shopping-cart"></i><span>Mercadeo y
+                                    Ventas</span></a></li>
+                        <li><a href="../logout/index.html"><i
+                                    class="fas fa-right-from-bracket"></i><span>Salir</span></a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <main class="content-area">
+                <section class="department-header">
+                    <h2><i class="fas fa-chart-line"></i> Finanzas</h2>
+                    <p>Panel de control financiero y análisis de rentabilidad.</p>
+                </section>
+
+                <!-- Funcionalidad destacada -->
+                <div class="priority-function">
+                    <div class="function-header">
+                        <i class="fas fa-chart-pie"></i>
+                        <h3>Rentabilidad por Servicio</h3>
+                    </div>
+                    <div class="function-description">
+                        <p>Visualiza los ingresos, egresos y márgenes de rentabilidad por cada línea de negocio.</p>
+                    </div>
+                    <div class="function-actions">
+                        <a href="index-rentabilidad.html" class="btn btn-primary">
+                            <i class="fas fa-eye"></i> Ver Panel
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Otras funcionalidades -->
+                <div class="function-grid">
+                    <div class="function-card">
+                        <div class="card-icon">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <h4>Flujo de Caja</h4>
+                        <p>Consulta de ingresos y egresos mensuales.</p>
+                        <a href="#" class="btn-link">Acceder <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="function-card">
+                        <div class="card-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <h4>Cuentas por Cobrar</h4>
+                        <p>Listado de clientes con pagos pendientes.</p>
+                        <a href="#" class="btn-link">Ver Detalles <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="function-card">
+                        <div class="card-icon">
+                            <i class="fas fa-file-invoice"></i>
+                        </div>
+                        <h4>Reportes Financieros</h4>
+                        <p>Generación de informes contables y presupuestarios.</p>
+                        <a href="#" class="btn-link">Generar <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <p>Intranet Corporativa ConectaPlus &copy; 2023 - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="../resources/script-base.js"></script>
+</body>
+
+</html>

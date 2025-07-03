@@ -1,0 +1,99 @@
+/* Encabezado del módulo */
+.department-header {
+    margin-bottom: 2rem;
+}
+
+.department-header h2 {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.department-header p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Funcionalidad destacada */
+.priority-function {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 2rem;
+}
+
+.function-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.function-header i {
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+}
+
+.function-header h3 {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.function-description p {
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.function-actions .btn {
+    margin-right: 1rem;
+}
+
+/* Tarjetas de otras funcionalidades */
+.function-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.function-card {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.function-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.function-card h4 {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.function-card p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.btn-link {
+    color: var(--secondary-color);
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.btn-link:hover {
+    color: #2980b9;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Facturas | ConectaPlus</title>
+    <link rel="stylesheet" href="../resources/style-base.css">
+    <link rel="stylesheet" href="style-facturas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-left">
+                <div class="company-logo">
+                    <img src="../resources/logo.png" alt="ConectaPlus">
+                </div>
+                <h1>Intranet Corporativa</h1>
+            </div>
+            <div class="header-right">
+                <div class="user-profile">
+                    <span class="welcome-msg">Bienvenido, Usuario</span>
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="app-content">
+            <main class="content-area">
+                <section class="billing-header">
+                    <h2><i class="fas fa-file-invoice"></i> Consulta de Facturas</h2>
+                    <p>Busca facturas por cédula o nombre del cliente.</p>
+                </section>
+
+                <form class="billing-form">
+                    <div class="form-group">
+                        <label for="busqueda">Buscar cliente</label>
+                        <input type="text" id="busqueda" placeholder="Ej: 12345678 o Juan Pérez">
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-search"></i> Buscar
+                    </button>
+                </form>
+
+                <section class="billing-results">
+                    <h3>Facturas encontradas</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>N° Factura</th>
+                                <th>Cliente</th>
+                                <th>Fecha</th>
+                                <th>Monto</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>F-00123</td>
+                                <td>Juan Pérez</td>
+                                <td>2023-06-10</td>
+                                <td>$120.00</td>
+                                <td><span class="badge badge-pagada">Pagada</span></td>
+                            </tr>
+                            <tr>
+                                <td>F-00124</td>
+                                <td>Juan Pérez</td>
+                                <td>2023-07-05</td>
+                                <td>$95.00</td>
+                                <td><span class="badge badge-pendiente">Pendiente</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </main>
+        </div>
+
+        <footer>
+            <p>Intranet Corporativa ConectaPlus &copy; 2023 - Todos los derechos reservados</p>
+        </footer>
+
+        <script src="script-facturas.js"></script>
+    </div>
+</body>
+
+</html>

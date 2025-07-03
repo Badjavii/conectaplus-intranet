@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capacitación | ConectaPlus</title>
+    <link rel="stylesheet" href="../resources/style-base.css">
+    <link rel="stylesheet" href="style-training.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-left">
+                <div class="company-logo">
+                    <img src="../resources/logo.png" alt="ConectaPlus">
+                </div>
+                <h1>Intranet Corporativa</h1>
+            </div>
+            <div class="header-right">
+                <div class="user-profile">
+                    <span class="welcome-msg">Bienvenido, Usuario</span>
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="app-content">
+            <aside class="app-sidebar">
+                <nav class="department-nav">
+                    <ul>
+                        <li><a href="../main/index-main.html"><i class="fas fa-home"></i><span>Inicio</span></a></li>
+                        <li><a href="../customer-service/index-cs.html"><i class="fas fa-headset"></i><span>Atención al
+                                    Cliente</span></a></li>
+                        <li><a href="../billing/index.html"><i
+                                    class="fas fa-file-invoice-dollar"></i><span>Facturación</span></a></li>
+                        <li><a href="../finance/index.html"><i class="fas fa-chart-line"></i><span>Finanzas</span></a>
+                        </li>
+                        <li><a href="../hr/index-hr.html"><i class="fas fa-users"></i><span>Recursos Humanos</span></a>
+                        </li>
+                        <li class="active"><a href="index.html"><i
+                                    class="fas fa-graduation-cap"></i><span>Capacitación</span></a></li>
+                        <li><a href="../business-intelligence/index.html"><i
+                                    class="fas fa-bullseye"></i><span>Inteligencia de Negocios</span></a></li>
+                        <li><a href="../marketing/index.html"><i class="fas fa-shopping-cart"></i><span>Mercadeo y
+                                    Ventas</span></a></li>
+                        <li><a href="../logout/index.html"><i
+                                    class="fas fa-right-from-bracket"></i><span>Salir</span></a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <main class="content-area">
+                <section class="department-header">
+                    <h2><i class="fas fa-graduation-cap"></i> Capacitación</h2>
+                    <p>Gestión de cursos, asistencia y desarrollo profesional.</p>
+                </section>
+
+                <!-- Funcionalidad destacada -->
+                <div class="priority-function">
+                    <div class="function-header">
+                        <i class="fas fa-user-check"></i>
+                        <h3>Registro de Asistencia</h3>
+                    </div>
+                    <div class="function-description">
+                        <p>Consulta de asistencia a cursos internos por empleado y fecha.</p>
+                    </div>
+                    <div class="function-actions">
+                        <a href="index-asistencia.html" class="btn btn-primary">
+                            <i class="fas fa-eye"></i> Ver Registro
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Otras funcionalidades -->
+                <div class="function-grid">
+                    <div class="function-card">
+                        <div class="card-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h4>Catálogo de Cursos</h4>
+                        <p>Listado de formaciones disponibles por área.</p>
+                        <a href="#" class="btn-link">Explorar <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="function-card">
+                        <div class="card-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h4>Calendario de Actividades</h4>
+                        <p>Fechas programadas para talleres y capacitaciones.</p>
+                        <a href="#" class="btn-link">Ver Calendario <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="function-card">
+                        <div class="card-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h4>Certificaciones</h4>
+                        <p>Historial de logros y constancias obtenidas.</p>
+                        <a href="#" class="btn-link">Consultar <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <p>Intranet Corporativa ConectaPlus &copy; 2023 - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="../resources/script-base.js"></script>
+</body>
+
+</html>

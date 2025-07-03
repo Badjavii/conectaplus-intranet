@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos Humanos | ConectaPlus</title>
+    <link rel="stylesheet" href="../resources/style-base.css">
+    <link rel="stylesheet" href="style-hr.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-left">
+                <div class="company-logo">
+                    <img src="../resources/logo.png" alt="ConectaPlus">
+                </div>
+                <h1>Intranet Corporativa</h1>
+            </div>
+            <div class="header-right">
+                <div class="user-profile">
+                    <span class="welcome-msg">Bienvenido, Usuario</span>
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="app-content">
+            <!-- Sidebar -->
+            <aside class="app-sidebar">
+                <nav class="department-nav">
+                    <ul>
+                        <li>
+                            <a href="../main/index-main.html"><i class="fas fa-home"></i>
+                                <span>Inicio</span></a>
+                        </li>
+                        <li><a href="../customer-service/index-cs.html"><i class="fas fa-headset"></i><span>Atención al
+                                    Cliente</span></a></li>
+                        <li><a href="../billing/index.html"><i
+                                    class="fas fa-file-invoice-dollar"></i><span>Facturación</span></a></li>
+                        <li><a href="../finance/index.html"><i class="fas fa-chart-line"></i><span>Finanzas</span></a>
+                        </li>
+                        <li class="active"><a href="index-hr.html"><i class="fas fa-users"></i><span>Recursos
+                                    Humanos</span></a></li>
+                        <li><a href="../training/index.html"><i
+                                    class="fas fa-graduation-cap"></i><span>Capacitación</span></a></li>
+                        <li><a href="../business-intelligence/index.html"><i
+                                    class="fas fa-bullseye"></i><span>Inteligencia de Negocios</span></a></li>
+                        <li><a href="../marketing/index.html"><i class="fas fa-shopping-cart"></i><span>Mercadeo y
+                                    Ventas</span></a></li>
+                        <li><a href="../logout/index.html"><i
+                                    class="fas fa-right-from-bracket"></i><span>Salir</span></a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- Content Area -->
+            <main class="content-area">
+                <section class="department-header">
+                    <h2><i class="fas fa-users"></i> Recursos Humanos</h2>
+                    <p>Gestión de personal, solicitudes y procesos administrativos.</p>
+                </section>
+
+                <!-- Función prioritaria destacada -->
+                <div class="priority-function">
+                    <div class="function-header">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h3>Solicitud de Vacaciones</h3>
+                    </div>
+                    <div class="function-description">
+                        <p>Formulario para registrar solicitudes de vacaciones y consultar el historial.</p>
+                    </div>
+                    <div class="function-actions">
+                        <a href="index-vacaciones.html" class="btn btn-primary">
+                            <i class="fas fa-plane-departure"></i> Acceder
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Otras funcionalidades -->
+                <div class="function-grid">
+                    <div class="function-card">
+                        <div class="card-icon">
+                            <i class="fas fa-id-badge"></i>
+                        </div>
+                        <h4>Actualización de Datos</h4>
+                        <p>Modificación de información personal y laboral del empleado.</p>
+                        <a href="#" class="btn-link">
+                            Acceder <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="function-card">
+                        <div class="card-icon">
+                            <i class="fas fa-user-clock"></i>
+                        </div>
+                        <h4>Control de Asistencia</h4>
+                        <p>Registro y monitoreo de asistencia diaria del personal.</p>
+                        <a href="#" class="btn-link">
+                            Ver Asistencia <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="function-card">
+                        <div class="card-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h4>Historial Laboral</h4>
+                        <p>Consulta de cargos, ascensos y movimientos internos.</p>
+                        <a href="#" class="btn-link">
+                            Consultar <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="function-card">
+                        <div class="card-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h4>Documentos del Empleado</h4>
+                        <p>Acceso a constancias, contratos y certificados.</p>
+                        <a href="#" class="btn-link">
+                            Ver Documentos <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <p>Intranet Corporativa ConectaPlus &copy; 2023 - Todos los derechos reservados</p>
+        <p><a href="#">Política de Privacidad</a> | <a href="#">Términos de Servicio</a></p>
+        <p>Desarrollado por el equipo de ConectaPlus</p>
+    </footer>
+
+    <script src="../resources/script-base.js"></script>
+</body>
+
+</html>

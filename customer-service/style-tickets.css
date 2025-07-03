@@ -1,0 +1,55 @@
+.ticket-header {
+    margin-bottom: 2rem;
+}
+
+.ticket-header h2 {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.ticket-header p {
+    color: #666;
+    font-size: 1rem;
+}
+
+.ticket-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--white);
+    box-shadow: var(--shadow-sm);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.ticket-table th,
+.ticket-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.ticket-table th {
+    background-color: var(--light-gray);
+    font-weight: 600;
+}
+
+.badge {
+    padding: 0.4rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: white;
+}
+
+.badge-pendiente {
+    background-color: #e67e22;
+}
+
+.badge-proceso {
+    background-color: #3498db;
+}
+
+.badge-resuelto {
+    background-color: #2ecc71;
+}

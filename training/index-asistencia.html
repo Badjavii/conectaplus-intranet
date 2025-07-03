@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Asistencia | ConectaPlus</title>
+    <link rel="stylesheet" href="../resources/style-base.css">
+    <link rel="stylesheet" href="style-asistencia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-left">
+                <div class="company-logo">
+                    <img src="../resources/logo.png" alt="ConectaPlus">
+                </div>
+                <h1>Intranet Corporativa</h1>
+            </div>
+            <div class="header-right">
+                <div class="user-profile">
+                    <span class="welcome-msg">Bienvenido, Usuario</span>
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="app-content">
+            <main class="content-area">
+                <section class="asistencia-header">
+                    <h2><i class="fas fa-user-check"></i> Registro de Asistencia</h2>
+                    <p>Consulta de participación en cursos internos por empleado.</p>
+                </section>
+
+                <section class="asistencia-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Empleado</th>
+                                <th>Curso</th>
+                                <th>Fecha</th>
+                                <th>Asistencia</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>María González</td>
+                                <td>Excel Avanzado</td>
+                                <td>2023-06-12</td>
+                                <td><span class="badge badge-presente">Presente</span></td>
+                            </tr>
+                            <tr>
+                                <td>Pedro Rivas</td>
+                                <td>Gestión de Proyectos</td>
+                                <td>2023-06-15</td>
+                                <td><span class="badge badge-ausente">Ausente</span></td>
+                            </tr>
+                            <tr>
+                                <td>Laura Méndez</td>
+                                <td>Comunicación Efectiva</td>
+                                <td>2023-06-18</td>
+                                <td><span class="badge badge-presente">Presente</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </main>
+        </div>
+
+        <footer>
+            <p>Intranet Corporativa ConectaPlus &copy; 2023 - Todos los derechos reservados</p>
+        </footer>
+
+        <script src="script-asistencia.js"></script>
+    </div>
+</body>
+
+</html>

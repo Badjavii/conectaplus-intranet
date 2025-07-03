@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Vacaciones | ConectaPlus</title>
+    <link rel="stylesheet" href="../resources/style-base.css">
+    <link rel="stylesheet" href="style-vacaciones.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-left">
+                <div class="company-logo">
+                    <img src="../resources/logo.png" alt="ConectaPlus">
+                </div>
+                <h1>Intranet Corporativa</h1>
+            </div>
+            <div class="header-right">
+                <div class="user-profile">
+                    <span class="welcome-msg">Bienvenido, Usuario</span>
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="app-content">
+            <main class="content-area">
+                <section class="vacation-header">
+                    <h2><i class="fas fa-plane-departure"></i> Solicitud de Vacaciones</h2>
+                    <p>Complete el formulario para registrar su solicitud de vacaciones.</p>
+                </section>
+
+                <!-- Formulario de solicitud -->
+                <form class="vacation-form">
+                    <div class="form-group">
+                        <label for="fecha-inicio">Fecha de inicio</label>
+                        <input type="date" id="fecha-inicio" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha-fin">Fecha de fin</label>
+                        <input type="date" id="fecha-fin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="motivo">Motivo</label>
+                        <textarea id="motivo" rows="3" placeholder="Opcional..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Enviar Solicitud
+                    </button>
+                </form>
+
+                <!-- Historial simulado -->
+                <section class="vacation-history">
+                    <h3>Historial de Solicitudes</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Fecha de Inicio</th>
+                                <th>Fecha de Fin</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2023-06-10</td>
+                                <td>2023-06-20</td>
+                                <td>Aprobado</td>
+                            </tr>
+                            <tr>
+                                <td>2023-12-01</td>
+                                <td>2023-12-10</td>
+                                <td>Pendiente</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <p>Intranet Corporativa ConectaPlus &copy; 2023 - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script-vacaciones.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+.campaigns-header {
+    margin-bottom: 2rem;
+}
+
+.campaigns-header h2 {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.campaigns-header p {
+    color: #666;
+    font-size: 1rem;
+}
+
+.campaigns-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--white);
+    box-shadow: var(--shadow-sm);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.campaigns-table th,
+.campaigns-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.campaigns-table th {
+    background-color: var(--light-gray);
+    font-weight: 600;
+}
